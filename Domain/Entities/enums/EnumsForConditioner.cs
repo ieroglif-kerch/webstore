@@ -19,13 +19,17 @@ namespace WebStore.Domain.Entities.enums
 		{
 			m21 = 1,
 			m25,
-			m35
+			m35,
+			m20,
+			m22,
+			m29
 		}
 		public enum Brand
 		{
 			Akvilon = 1,
 			Kentatsu,
-			Haier
+			Haier,
+			Aeronik
 		}
 		public enum Inverter
 		{
