@@ -1,0 +1,5 @@
+*.Domain.csproj.FileListAbsolute.txt
+/WebStore.Domain.csproj.FileListAbsolute.txt
+/WebStore.Domain.csprojResolveAssemblyReference.cache
+/WebStore.Domain.dll
+/WebStore.Domain.pdb
