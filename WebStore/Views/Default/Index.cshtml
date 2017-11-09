@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebStore.Services.DTO.ProductDTO>
+@{
+    ViewBag.Title = "MainView";
+}
+
+<h2>MainView</h2>
+<div class="table-responsive">
+      <table class="table table-bordered table-hover table-striped">
+          <tr>
+              <th>Brand</th>
+              <th>Model</th>             
+              <th>Type</th>
+              <th>режим работы</th>
+              <th>охлождающая способность</th>
+              <th>Рабочая площадь</th>
+              <th>мин уровень шума</th>              
+              <th>тип компрессора</th>
+              <th>потребляемая мощность охл</th>
+              <th>потребляемя мощьность тепло</th>
+              <th></th>
+              <th>мощность охлаждениея</th>
+              <th>мощность нагрева</th>
+              <th>макс воздушниый поток</th>
+              <th>размеры наружного блока</th>
+              <th>размеры внутреннего</th>
+              <th>Price</th>              
+          </tr>
+          @foreach (var p in Model)
+          {
+            <tr>
+                <td>@p.Brand</td>
+                <td>@p.Model</td>
+                <td>@p.TypeofConditioner</td>
+                <td>@p.OperationMode</td>
+                <td>@p.BTU</td>
+                <td>@p.ServiceArea</td>
+                <td>@p.NoiseMin</td>
+                <td>@p.TypeOfCompressor</td>
+                <td>@p.ConsumPowerCold</td>
+                <td>@p.ConsumPowerHeat <td>
+                <td>@p.ProducePowerCold</td>
+                <td>@p.ProducePowerHeat</td>
+                <td>@p.WindFlowMax</td>
+                <td>@p.OutUnitSize</td>
+                <td>@p.InUnitSize</td>
+                <td>@p.Price</td>
+
+            </tr>
+          }
+      </table>
+</div>
