@@ -18,7 +18,7 @@ namespace WebStore.DAL.Context
 
 			context.Brand.AddRange( new List<Brand>
 						{
-						new Brand { Name = "Akvilon " },
+						new Brand { Name = "Akvilon" },
 						new Brand { Name = "Kentatsu" },
 						new Brand { Name = "Haier"    },
 						new Brand { Name = "Aeronik"  }

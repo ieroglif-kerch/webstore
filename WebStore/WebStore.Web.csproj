@@ -103,6 +103,11 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\Conditioner\Aeronik\INDOOR.jpg" />
+    <Content Include="Content\img\Conditioner\Akvilon\FULL.jpg" />
+    <Content Include="Content\img\Conditioner\Akvilon\INDOOR.jpg" />
+    <Content Include="Content\img\Conditioner\HaierInDoor.jpg" />
+    <Content Include="Content\img\logo.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
