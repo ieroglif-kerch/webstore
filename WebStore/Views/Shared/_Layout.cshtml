@@ -4,12 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+  
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+<body class="container">
+
+    <div class="container">
+        <div class="jumbotron row" id="JumbortonHeader" >
+
+            <a href="#" class="col-md-4 col-sm-5 col-xs-6">
+                <img src="~/Content/img/logo.jpg" alt="logo" class="img-thumbnail img-responsive" />
+            </a>
+            
+
+            <p id="Number" class="col-md-offset-2 col-xs-offset-1 col-md-6">+7(979) 778 97 11 </p>
+
+        </div>
+    </div>
+    <div class="navbar navbar-inverse ">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,20 +31,84 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+                @Html.ActionLink( "КОНДИЦИОНРЫ +", "Index", "Default", new { area = "" }, new { @class = "navbar-brand" } )
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="navbar-link">Сервис</a></li>
+                    <li class="nav-item"><a class="navbar-link">Услуги</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ещё <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Гарантия и сервис</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Как купить</a></li>
+                            <li><a href="#">Часто задаваемые вапросы</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Заказать звонок консультанта</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">О нас</a></li>
+                        </ul>
+                    </li>
                 </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group ">
+                        <input type="text" class="form-control " placeholder="Поиск">                       
+                    </div>
+                    <button type="submit" class="btn btn-default">Ok</button>
+                </form>
             </div>
+
         </div>
     </div>
 
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+       
+        <footer class="navbar navbar-inverse row" style="margin-bottom: 0px;">
+           
+                <div class="col-md-3 col-sm-6 navbar-text col-lg-3">
+                    <p class="h4 ">О компании</p>
+                    <ul class="list-unstyled h5 ">
+                        <li><a href="#">Фирмы</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Что нибудь еще</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 navbar-text col-md-offset-1 text-muted col-lg-3 col-lg-offset-1">
+                    <p class="h4 ">Потдержка</p>
+                    <ul class="list-unstyled h5 ">
+                        <li><a href="#">Статьи</a></li>                        
+                        <li><a href="#">Гарантия и сервис</a></li>
+                        <li><a href="#">Часто задаваемые вапросы</a></li>
+                    </ul>
+                </div>
+           
+                <div class="col-md-4 navbar-text col-md-offset-1 text-muted col-lg-4 col-lg-offset-1">
+                    <p class="h4">Обратная связь</p>
+                    <ul class="list-unstyled h5 ">
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Как купить</a></li>
+                        <li><a href="#">Заказать звонок</a></li>
+                    </ul>
+                </div>
+         
+        
+         
+          <p class="navbar-text border-right col-lg-3 ">&copy; @DateTime.Now.Year.  Все права защищены.  </p>
+         
+          <p class="navbar-text  border-right col-sm-3 col-lg-3 col-lg-offset-2">Тел.: +7(979) 778 97 11</p>
+           
+            <p class="navbar-text  col-sm-2 col-sm-offset-2 col-lg-3">
+                Мы в соц.сетях:
+            </p> 
+            <a class="navbar-brand " href="https://vk.com/olegklimat">
+                    <img alt="Vk" height="50" class="navbar-right" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPwSURBVGhD7ZpJaFNRFIZDVcShBSfEEVFBxWmjG3cuBNGdguBORFy4cuVCK11JG611thZbWlyIA2gFByqFKjjVhX0ZtLax6Wi1pS2dk7ZprvckJ+0bTtKcpNiLvg9+Au+d/Pd/uTf33ct7DhsbGxsbm3Rx1mZm5GnnM3JdXvkZyMhziZmRbDtXc0MWR453IaZLkzzPFnlhfrrBmZTWANkwZYrkfMoCI7oBFaT5YHRhWj4wFGhjhZTrysa4fKSBx2KonDQN4/KRX57BCSVZaQGMy4c2VE8Ylw9lpqIwLh/KTEVhXD6UmYrCuHwoMxWFcflQZioK4/KhzDjKKvCIjXdqJ7SjpE4syPeQtekI4/KhzJLRsmte8drfL8LCSnX7EPmddIRx+ZiNll71iu5ACKNOUt8TFKtufpuom3fJLY4+axb9I+NYYQR6Vu8LWnnjq2juG8UKI3XdQUu9XhiXj9lottMlfD0j2KyR/OpOQy2o8EsXnjUyP99tqS3WuvGslQ9tiXsd4/KhzE68bMVmjUBvwdDU156u/IlnjehrQFvvfhdj49SAFmJUHt9dVm/5jl4Ylw9lNveiW/h76V50fjT24qmKNjxjRF8DelrXi2esZL/9Zak3C+PyocxAJ1/RvRgYC4tNRd8n6pK5wENPmvColXetg2KO0zqczcK4fCgzEPQiTCwUMHvOwrozVe141EjMZ4WcWDqGxvCoka7hkFh3e3LiSiSMy4cyi2n/Qz9GsXL2TXRYlbjoiWNXab1YLWddd2cAjxiBf+PBx35Lm/GEcflQZnqV1/dFExFUyJ4cGqVvE33BkAiG6EkFKPhsnZETCePyocz02lBYG/nfTTdrbiU3NGPCuHwoM7Pi/c/S4djzFrKteMK4fCgzs+DmX9U8gNGmhxE5fA/L2ZVqjxLG5UOZUVp+Pf4yK1XgIuEWQrVnFsblQ5nF0065U6DWqRRFNV3i+IsW0RnnFhEDLvLAo6lnU4zLhzJLpG3FdUn1JGydoH6tnEy0DvpWEaNXzrj6xQMljMuHMptKi694Ram7R8RZWkZYJGti9UvkDuW9XEwnorJxwNCGWRiXD2WWrLbL3oTdxO9B4zAMhcMi87JxuwS7izL5o8T7TRrl2ldfbxbG5UOZpaL18n4JK5Mj5U1izz0fWQOCXQXUgPY9aIho7/0Gcv+oF8blQ5mpKIzLhzJTURiXD2WmojAuH8pMRWFcPpSZisK4fP79x2eRB/6UqULKddVgXD7weJg0VUvnMG4KRF8f8RGmikjzpf86SeQ1Eu0H3cAMSmZyXHBvxpRpIn+l6HDVNPk5TDb4NxRpO5Ihe/peBLKxsbGx+W9xOP4AlCQPQb8T4UAAAAAASUVORK5CYII=">
+            </a>
+            
+            
+           
         </footer>
     </div>
 

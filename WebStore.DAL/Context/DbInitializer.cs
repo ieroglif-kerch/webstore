@@ -177,7 +177,7 @@ namespace WebStore.DAL.Context
 		#region Aeronik
 				new Product {
 							BrandId             = (int)Ids.Brand.Aeronik,
-							Model               = "AERONIK ASI-09IL1/ASO-09IL1",
+							Model               = "ASI-09IL1/ASO-09IL1",
 							NoiseMin            = 40,
 							ConsumPowerCold     = 780,
 							ConsumPowerHeat     = 780,
