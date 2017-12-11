@@ -13,7 +13,8 @@ namespace WebStore.Domain.Entities
 	public class Product
 	{
 		[Key]
-		public int Id { get; set; }
+		public int	  Id { get; set; }
+		public string Series { get; set; }
 		public string Model { get; set; }
 		public double Price { get; set; }
 		///Flag for cheaking if product is removed (erased)

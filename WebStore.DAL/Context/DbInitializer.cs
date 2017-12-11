@@ -64,6 +64,7 @@ namespace WebStore.DAL.Context
 				new Product {
 							BrandId				= (int)Ids.Brand.Akvilon,
 							Model				= "NC-12",
+							Series				= "NC",
 							NoiseMin			= 36,
 							ConsumPowerCold		= 1050,
 							ConsumPowerHeat		= 1025,
@@ -84,7 +85,8 @@ namespace WebStore.DAL.Context
 				new Product {
 							BrandId				= (int)Ids.Brand.Akvilon,
 							Model				= "NC-7",
-							NoiseMin			= 34,
+							Series              = "NC",
+							NoiseMin            = 34,
 							ProducePowerCold	= 2051,
 							ProducePowerHeat	= 2198,
 							ConsumPowerCold     = 655,
@@ -102,6 +104,7 @@ namespace WebStore.DAL.Context
 				new Product {
 							BrandId             = (int)Ids.Brand.Akvilon,
 							Model               = "NC-9",
+							Series              = "NC",
 							NoiseMin            = 34,
 							ProducePowerCold    = 2637,
 							ProducePowerHeat    = 2785,
@@ -122,6 +125,7 @@ namespace WebStore.DAL.Context
 				new Product {
 							BrandId             = (int)Ids.Brand.Kentatsu,
 							Model               = "KSGM21HFAN1",
+							Series              = "KSGM",
 							NoiseMin            = 30,
 							ConsumPowerCold		= 700,
 							ConsumPowerHeat		= 680,
@@ -139,6 +143,7 @@ namespace WebStore.DAL.Context
 							},
 				new Product {
 							BrandId             = (int)Ids.Brand.Kentatsu,
+							Series              = "KSGM",
 							Model               = "KSGM26HFAN1",
 							NoiseMin            = 29,
 							ConsumPowerCold     = 830,
@@ -158,6 +163,7 @@ namespace WebStore.DAL.Context
 				new Product {
 							BrandId             = (int)Ids.Brand.Kentatsu,
 							Model               = "KSGM35HFAN1",
+							Series              = "KSGM",
 							NoiseMin            = 30,
 							ConsumPowerCold     = 1090,
 							ConsumPowerHeat     = 1020,
@@ -177,6 +183,7 @@ namespace WebStore.DAL.Context
 		#region Aeronik
 				new Product {
 							BrandId             = (int)Ids.Brand.Aeronik,
+							Series              = "Legend",
 							Model               = "ASI-09IL1/ASO-09IL1",
 							NoiseMin            = 40,
 							ConsumPowerCold     = 780,
@@ -196,6 +203,7 @@ namespace WebStore.DAL.Context
 				new Product {
 							BrandId             = (int)Ids.Brand.Aeronik,
 							Model               = "ASI-07IL1/ASO-07IL1",
+							Series              = "Legend",
 							NoiseMin            = 40,
 							ConsumPowerCold     = 780,
 							ConsumPowerHeat     = 780,
@@ -215,6 +223,7 @@ namespace WebStore.DAL.Context
 		#region Haier
 			new Product {
 							BrandId             = (int)Ids.Brand.Haier,
+							Series              = "Home",
 							Model               = "HSU-07HEK303/R2",
 							NoiseMin            = 30,
 							ConsumPowerCold     = 680,
@@ -233,6 +242,7 @@ namespace WebStore.DAL.Context
 							},
 				new Product {
 							BrandId             = (int)Ids.Brand.Haier,
+							Series              = "Home",
 							Model               = "HSU-09HEK203/R2",
 							NoiseMin            = 30,
 							ConsumPowerCold     = 780,
@@ -250,6 +260,7 @@ namespace WebStore.DAL.Context
 							TermalCapabilityId  = (int)Ids.BTU.BTU9,
 							},
 				new Product {
+							Series              = "Home",
 							BrandId             = (int)Ids.Brand.Haier,
 							Model               = "HSU-12HEK203/R2",
 							NoiseMin            = 32,
@@ -269,6 +280,7 @@ namespace WebStore.DAL.Context
 							},
 				new Product {
 							BrandId             = (int)Ids.Brand.Haier,
+							Series              = "Home",
 							Model               = "HSU-09HEK303/R2(DB)",
 							NoiseMin            = 27,
 							ConsumPowerCold     = 770,

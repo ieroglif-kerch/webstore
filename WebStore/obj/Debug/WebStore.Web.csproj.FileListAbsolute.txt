@@ -43,3 +43,5 @@ D:\Coding\MyShop\WebStore\WebStore\bin\WebStore.DAL.pdb
 D:\Coding\MyShop\WebStore\WebStore\bin\WebStore.Services.pdb
 D:\Coding\MyShop\WebStore\WebStore\bin\WebStore.Domain.dll
 D:\Coding\MyShop\WebStore\WebStore\bin\WebStore.Domain.pdb
+D:\Coding\MyShop\WebStore\WebStore\bin\LinqKit.dll
+D:\Coding\MyShop\WebStore\WebStore\bin\LinqKit.xml

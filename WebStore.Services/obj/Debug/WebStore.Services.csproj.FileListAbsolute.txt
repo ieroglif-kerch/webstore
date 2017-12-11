@@ -24,3 +24,7 @@ D:\Coding\MyShop\WebStore\WebStore.Services\bin\EntityFramework.xml
 D:\Coding\MyShop\WebStore\WebStore.Services\obj\Debug\WebStore.Services.csprojResolveAssemblyReference.cache
 D:\Coding\MyShop\WebStore\WebStore.Services\bin\WebStore.Domain.dll
 D:\Coding\MyShop\WebStore\WebStore.Services\bin\WebStore.Domain.pdb
+D:\Coding\MyShop\WebStore\WebStore.Services\bin\EntityFramework.SqlServer.dll
+D:\Coding\MyShop\WebStore\WebStore.Services\bin\LinqKit.dll
+D:\Coding\MyShop\WebStore\WebStore.Services\bin\EntityFramework.SqlServer.xml
+D:\Coding\MyShop\WebStore\WebStore.Services\bin\LinqKit.xml

@@ -1,17 +1,32 @@
 ﻿@model IEnumerable<WebStore.Services.DTO.ProductDTO>
 @{
     ViewBag.Title = "MainView";
-    var example = Model.ElementAt(0);
-}
+}  
 
 <h2 class="hidden">Кондиционеры</h2>
 <div class="panel panel-default">
-    <ul class="nav nav-tabs nav-justified">
-        <li role="presentation" class="active"><a href="#">До 15 000</a></li>
-        <li role="presentation"><a href="#">До 20 000</a></li>
-        <li role="presentation"><a href="#">Свыше 20 000</a></li>
-        <li role="presentation"><a href="#">Инвертора</a></li>
-        <li role="presentation"><a href="#">Все</a></li>
+    
+    <ul class="nav nav-tabs nav-justified" >
+        <li role="presentation"     class= "@if (ViewBag.Tab== 1) 
+                                             { @:active 
+                                              } " >
+                <a href="http://localhost:1544/Default/Index?PriceRange=1#nav-tabs">До 15 000</a></li>
+        <li role="presentation"     class= "@if (ViewBag.Tab == 2)
+                                              { @:active 
+                                            } ">
+                 <a href="http://localhost:1544/Default/Index?PriceRange=2#nav-tabs">До 20 000</a></li>
+        <li role="presentation"     class= "@if (ViewBag.Tab  == 3)
+                                              { @:active 
+                                            } ">
+                <a href="http://localhost:1544/Default/Index?PriceRange=3#nav-tabs">Свыше 20 000</a></li>
+        <li role="presentation"     class= "@if (ViewBag.Tab == 4)
+                                              { @:active 
+                                            } ">
+                <a href="http://localhost:1544/Default/Index?PriceRange=4#nav-tabs">Инвертора</a></li>
+        <li role="presentation"     class= "@if (ViewBag.Tab ==0)
+                                              { @:active 
+                                            } ">
+                <a href="http://localhost:1544/Default/Index#nav-tabs">Все</a></li>
 
     </ul>
     <ul class="nav nav-pills nav-justified">
@@ -19,60 +34,22 @@
             @foreach (var p in Model)
             {
             <div class="panel-body">
-                <div class="btn btn-default col-xm-12  col-sm-12 col-md-12">
-                   <img src="~/Content/img/Conditioner/@p.Brand/INDOOR.jpg" alt="Con. Ind.Unit" class="img-thumbnail img-responsive col-md-2 col-sm-4 col-xs-5 " />
-                   <p                     class="h4 text-center    col-xs-11 col-xs-offset-1 col-sm-8 col-md-4">@p.Brand.ToUpper() @p.Model.ToUpper()</p> 
-                   <button type="button"  class="btn btn-info      col-xs-6   col-sm-3 col-md-2 col-md-offset-1 col-sm-offset-1 col-xs-4">Характеристики</button>
-                   <button type="button"  class="btn btn-danger    col-xs-6  col-sm-3 col-md-2 col-md-offset-1 col-sm-offset-1 col-xs-4">Купить за @p.Price р. </button>
-                </div>
+                <a class="btn-link" href="http://localhost:1544/Default/Index?idInfo=@p.Id&PriceRange=@ViewBag.Tab#ModelInfo">
+                    <div class="btn btn-default col-xm-12  col-sm-12 col-md-12">
+
+                        <img src="~/Content/img/Conditioner/@p.Brand/@p.Series/INDOOR.jpg" alt="Con. Ind.Unit" class="img-thumbnail img-responsive col-md-2 col-sm-4 col-xs-12 " />
+                        <p class="h4 text-center    col-xs-12 col-sm-8 col-md-4" style="margin-top: 0.625em;">@p.Brand.ToUpper() @p.Model.ToUpper()</p>
+                        
+                        <a class="btn btn-danger    col-xs-6  col-sm-3 col-md-2 col-md-offset-1 col-sm-offset-1 col-xs-4" style="margin-top: 0.625em;" href="https://vk.com/psprices">Купить за @p.Price р. </a>
+                    </div>
+                </a>
             </div>
             }
         </li>
     </ul>
 </div>       
-              
-        <div class="container panel panel-default ">
-           
-            <div class="row panel-body">
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <img src="~/Content/img/Conditioner/@example.Brand/Full.jpg" alt="Conditioner's image" class="img-thumbnail img-responsive" />
-                </div>
-                <div class="col-md-6 col-md-offset-1 col-sm-offset-1">
-                   <div class="panel-body">
-                         <p class="h3 col-md-6  col-sm-6 text-center"><strong>@example.Brand</strong></p>
-                        <p class="h4 col-md-6 col-sm-6  text-center"><strong>@example.Model</strong></p>
-                    </div>
-                    <p class="h5   "><span class="text-muted">Тип:</span> @example.TypeofConditioner</p>
-
-                    <p class="h5   "><span class="text-muted">Основной режим работы:</span> @example.OperationMode</p>
-                    <p class="h5 "><span class="text-muted">Охлаждающая способность:</span> @example.BTU</p>
-                    <p class="h5 "><span class="text-muted">Обслуживаемая площадь:</span> @example.ServiceArea</p>
-                    <p class="h5  "><span class="text-muted">Мин. уровень шума внутреннего блока :</span> @example.NoiseMin</p>
-                    <p class="h5 "><span class="text-muted">Инвертор:</span> @example.TypeOfCompressor</p>
-                    <p class="h5 "><span class="text-muted">Потребляемая мощьность при охлаждении:</span> @example.ConsumPowerCold</p>
-                    <p class="h5  "><span class="text-muted">Потребляемая мощьность при нагреве:</span> @example.ConsumPowerHeat</p>
-                    <p class="h5  "><span class="text-muted">Выдаваемая мощьность охлаждения:</span> @example.ProducePowerCold</p>
-                    <p class="h5  "><span class="text-muted">Выдаваемя мощьность нагрева:</span> @example.ProducePowerHeat</p>
-                    <p class="h5  "><span class="text-muted">Макс. воздушный поток:</span> @example.WindFlowMax</p>
-                    <p class="h5  "><span class="text-muted">Габариты НАРУЖНОГО блока:</span> @example.OutUnitSize</p>
-                    <p class="h5  "><span class="text-muted">Габариты ВНУТРЕННЕГО блока:</span> @example.InUnitSize</p>
-                    <p class="h5  "><span class="text-muted">Цена: </span> <span class="text-success h4">@example.Price </span></p>
-
-                </div>
-            </div>    
-                 <div class="row panel-body">
-                     <button type="button" class="btn btn-danger   col-md-3 col-md-offset-7   col-sm-offset-5 col-sm-3  col-xs-offset-1 col-xs-7">ПРИОБРЕСТИ </button>
-
-                </div>
-                <div class="row panel-body">
-                    <button type="button" class="btn btn-info     col-md-3 col-md-offset-7   col-sm-offset-5 col-sm-3  col-xs-offset-1 col-xs-7">На сайт изготовителя</button>
-                </div>
-           
-
-        </div>
-
-
-
-
+      
+   <a name="ModelInfo"></a>
+@Html.Action( "ConditionerInfo" );
 
 

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using WebStore.DAL.Repositories.Base;
 using WebStore.Services.DTO;
+using WebStore.Services.Filters;
 using WebStore.Services.Services.Base;
 
 namespace WebStore.Services.Services
@@ -17,13 +18,19 @@ namespace WebStore.Services.Services
 		{
 			_productRepository = productRepository;
 		}
-
-		public IEnumerable<ProductDTO> GetProducts()
+		
+		public IEnumerable<ProductDTO> GetProducts( ProductFilter filter = null )
 		{
-			return _productRepository.GetProducts().Select( x => new ProductDTO
+			//прокидываем наш фильтр в filter builder
+			var builder = new ProductFilterBuilder(filter);
+			//берем результат
+			var expr = builder.Build();
+
+			return _productRepository.GetProducts(expr).Select( x => new ProductDTO
 			{
 				Id				  = x.Id,
 				Model		 	  = x.Model,
+				Series			  = x.Series,
 				Price			  = x.Price,
 				ConsumPowerCold   = x.ConsumPowerCold,
 				ConsumPowerHeat   = x.ConsumPowerHeat,
@@ -41,5 +48,7 @@ namespace WebStore.Services.Services
 				BTU				  = x.TermalCapability.BTU
 			} ).ToList();
 		}
+
+	
 	}
 }

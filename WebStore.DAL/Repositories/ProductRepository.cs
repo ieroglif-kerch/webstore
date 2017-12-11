@@ -34,7 +34,7 @@ namespace WebStore.DAL.Repositories
 								   .Include(x=> x.TermalCapability)
 								   .Include(x=> x.ServiceArea)
 								   .Include(x=> x.Compressor)
-								   .Where(x=> x.IsRemoved == false);
+								   .Where(  x=> x.IsRemoved == false);
 		}
 
 		/// <summary>

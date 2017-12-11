@@ -9,6 +9,7 @@ namespace WebStore.Services.DTO
 	{
 		public int Id { get; set; }
 		public string Model { get; set; }
+		public string Series { get; set; }
 		public double Price { get; set; }		
 		public int NoiseMin { get; set; }
 		///Consumed electrical power in cold mode
