@@ -138,8 +138,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Shared\ConditionerInfo.cshtml" />
+    <Content Include="Views\Shared\_ConditionerInfo.cshtml" />
     <Content Include="Views\Shared\Empty.cshtml" />
+    <Content Include="Views\Default\Articles.cshtml" />
+    <Content Include="Views\Shared\_mounting.cshtml" />
+    <Content Include="Views\Shared\_choosing.cshtml" />
+    <Content Include="Views\Shared\_efficiency.cshtml" />
+    <Content Include="Views\Shared\_consumption.cshtml" />
+    <Content Include="Views\Shared\_cold.cshtml" />
+    <Content Include="Views\Shared\_invertor.cshtml" />
+    <Content Include="Views\Default\Questions.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -151,6 +159,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\img\Conditioner\Conditioner\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Shared\Articles\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\WebStore.Domain.csproj">

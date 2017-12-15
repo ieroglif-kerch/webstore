@@ -79,7 +79,7 @@ namespace WebStore.DAL.Context
 							ServiceAreaId		= (int)Ids.Area.m35,
 							CompressorId		= (int)Ids.Inverter.No,
 							TermalCapabilityId  = (int)Ids.BTU.BTU12,
-
+							MakerRef			= "https://market.yandex.ru/product--akvilon-nc-12/13624672",
 							},
 
 				new Product {
@@ -100,6 +100,7 @@ namespace WebStore.DAL.Context
 							ServiceAreaId       = (int)Ids.Area.m21,
 							CompressorId        = (int)Ids.Inverter.No,
 							TermalCapabilityId  = (int)Ids.BTU.BTU7,
+							MakerRef            = "https://market.yandex.ru/product--akvilon-nc-07/13624670",
 							},
 				new Product {
 							BrandId             = (int)Ids.Brand.Akvilon,
@@ -119,6 +120,8 @@ namespace WebStore.DAL.Context
 							ServiceAreaId       = (int)Ids.Area.m25,
 							CompressorId        = (int)Ids.Inverter.No,
 							TermalCapabilityId  = (int)Ids.BTU.BTU9,
+							MakerRef            = "https://market.yandex.ru/product--akvilon-nc-09/13624671",
+
 							},
 				#endregion
 		#region Kentatsu
@@ -140,6 +143,7 @@ namespace WebStore.DAL.Context
 							ServiceAreaId       = (int)Ids.Area.m21,
 							CompressorId        = (int)Ids.Inverter.No,
 							TermalCapabilityId  = (int)Ids.BTU.BTU7,
+							MakerRef			= "http://www.kentatsu-aircon.ru/nastennye-split-sistemy-kentatsu-ksgm-hfa.shtml",
 							},
 				new Product {
 							BrandId             = (int)Ids.Brand.Kentatsu,
@@ -159,6 +163,8 @@ namespace WebStore.DAL.Context
 							ServiceAreaId       = (int)Ids.Area.m25,
 							CompressorId        = (int)Ids.Inverter.No,
 							TermalCapabilityId  = (int)Ids.BTU.BTU9,
+							MakerRef            = "http://www.kentatsu-aircon.ru/nastennye-split-sistemy-kentatsu-ksgm-hfa.shtml",
+
 							},
 				new Product {
 							BrandId             = (int)Ids.Brand.Kentatsu,
@@ -178,6 +184,8 @@ namespace WebStore.DAL.Context
 							ServiceAreaId       = (int)Ids.Area.m35,
 							CompressorId        = (int)Ids.Inverter.No,
 							TermalCapabilityId  = (int)Ids.BTU.BTU12,
+							MakerRef            = "http://www.kentatsu-aircon.ru/nastennye-split-sistemy-kentatsu-ksgm-hfa.shtml",
+
 							},
 			#endregion
 		#region Aeronik
@@ -199,6 +207,8 @@ namespace WebStore.DAL.Context
 							ServiceAreaId       = (int)Ids.Area.m25,
 							CompressorId        = (int)Ids.Inverter.Yes,
 							TermalCapabilityId  = (int)Ids.BTU.BTU9,
+							MakerRef            = "http://www.aeronik.ru/catalogitems/konditsionery/?iid=9B2790529E3843DD874F6E140247D6D2",
+
 							},
 				new Product {
 							BrandId             = (int)Ids.Brand.Aeronik,
@@ -218,6 +228,7 @@ namespace WebStore.DAL.Context
 							ServiceAreaId       = (int)Ids.Area.m20,
 							CompressorId        = (int)Ids.Inverter.Yes,
 							TermalCapabilityId  = (int)Ids.BTU.BTU7,
+							MakerRef			= "http://www.aeronik.ru/catalogitems/konditsionery/?iid=AD9AF9760EF849B3B5AF227847A56E3B",
 							},
 			#endregion
 		#region Haier
@@ -239,6 +250,7 @@ namespace WebStore.DAL.Context
 							ServiceAreaId       = (int)Ids.Area.m20,
 							CompressorId        = (int)Ids.Inverter.No,
 							TermalCapabilityId  = (int)Ids.BTU.BTU7,
+							MakerRef			= "https://haierproff.ru/material/cond/tech/products/condicionery_SuperMatch/neinvertornie_kondicionery_home/kondicioner-HSU-07HEK303R2_HSU-07HUN103-R2",
 							},
 				new Product {
 							BrandId             = (int)Ids.Brand.Haier,
@@ -258,6 +270,8 @@ namespace WebStore.DAL.Context
 							ServiceAreaId       = (int)Ids.Area.m22,
 							CompressorId        = (int)Ids.Inverter.No,
 							TermalCapabilityId  = (int)Ids.BTU.BTU9,
+							MakerRef            = "https://haierproff.ru/material/cond/tech/products/condicionery_SuperMatch/neinvertornie_kondicionery_home/kondicioner-HSU-09HEK203",
+
 							},
 				new Product {
 							Series              = "Home",
@@ -277,6 +291,8 @@ namespace WebStore.DAL.Context
 							ServiceAreaId       = (int)Ids.Area.m29,
 							CompressorId        = (int)Ids.Inverter.No,
 							TermalCapabilityId  = (int)Ids.BTU.BTU12,
+							MakerRef            = "https://haierproff.ru/material/cond/tech/products/condicionery_SuperMatch/neinvertornie_kondicionery_home/kondicioner-HSU-12HEK203",
+
 							},
 				new Product {
 							BrandId             = (int)Ids.Brand.Haier,
@@ -296,6 +312,8 @@ namespace WebStore.DAL.Context
 							ServiceAreaId       = (int)Ids.Area.m22,
 							CompressorId        = (int)Ids.Inverter.Yes,
 							TermalCapabilityId  = (int)Ids.BTU.BTU9,
+							MakerRef            = "https://haierproff.ru/material/cond/tech/products/invertornie_kondicionery/102/kondicioner-HSU-09HEK303-R2DB",
+
 							},
 			#endregion
 			 } );

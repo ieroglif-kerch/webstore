@@ -33,6 +33,7 @@ namespace WebStore.Services.DTO
 		public int BTU { get; set; }
 		public int ServiceArea { get; set; }
 		public string TypeOfCompressor { get; set; }
+		public string MakerRef { get; set; }
 
 
 	}

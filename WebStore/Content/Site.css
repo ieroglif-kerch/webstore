@@ -33,7 +33,14 @@ textarea {
        margin-bottom: ; */
 }
 
-a
-{     
-     color: cadetblue  ;
+
+.indent
+{
+        text-indent: 20px;
 }
+
+.nonindent{  
+        text-indent: 0;      
+}
+
+

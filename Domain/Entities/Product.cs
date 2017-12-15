@@ -33,6 +33,8 @@ namespace WebStore.Domain.Entities
 		public string OutUnitSize { get; set; }
 		///Indoor unit size
 		public string InUnitSize { get; set; }
+		///Maker referance
+		public string MakerRef { get; set; }
 
 		//Connections
 		[ForeignKey( "Brand" )]

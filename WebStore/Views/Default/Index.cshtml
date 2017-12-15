@@ -34,15 +34,15 @@
             @foreach (var p in Model)
             {
             <div class="panel-body">
-                <a class="btn-link" href="http://localhost:1544/Default/Index?idInfo=@p.Id&PriceRange=@ViewBag.Tab#ModelInfo">
+               
                     <div class="btn btn-default col-xm-12  col-sm-12 col-md-12">
-
-                        <img src="~/Content/img/Conditioner/@p.Brand/@p.Series/INDOOR.jpg" alt="Con. Ind.Unit" class="img-thumbnail img-responsive col-md-2 col-sm-4 col-xs-12 " />
-                        <p class="h4 text-center    col-xs-12 col-sm-8 col-md-4" style="margin-top: 0.625em;">@p.Brand.ToUpper() @p.Model.ToUpper()</p>
-                        
-                        <a class="btn btn-danger    col-xs-6  col-sm-3 col-md-2 col-md-offset-1 col-sm-offset-1 col-xs-4" style="margin-top: 0.625em;" href="https://vk.com/psprices">Купить за @p.Price р. </a>
+                        <a class="btn-link" href="http://localhost:1544/Default/Index?idInfo=@p.Id&PriceRange=@ViewBag.Tab#ModelInfo">
+                            <img src="~/Content/img/Conditioner/@p.Brand/@p.Series/INDOOR.jpg" alt="Con. Ind.Unit" class="img-thumbnail img-responsive col-md-2 col-sm-4 col-xs-12 " />
+                            <p class="h4 text-center    col-xs-12 col-sm-8 col-md-4" style="margin-top: 0.625em;">@p.Brand.ToUpper() @p.Model.ToUpper()</p>
+                        </a>
+                            <a class="btn btn-danger    col-xs-12  col-sm-4 col-md-2 col-md-offset-3 col-sm-offset-2 col-xs-4" style="margin-top: 0.625em;" href="https://vk.com/psprices">Купить за @p.Price р. </a>
                     </div>
-                </a>
+               
             </div>
             }
         </li>

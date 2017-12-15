@@ -45,7 +45,8 @@ namespace WebStore.Services.Services
 				OperationMode     = x.OperationMode.Mode,
 				ServiceArea       = x.ServiceArea.Area,
 				TypeOfCompressor  = x.Compressor.Type,
-				BTU				  = x.TermalCapability.BTU
+				BTU				  = x.TermalCapability.BTU,
+				MakerRef		  = x.MakerRef,
 			} ).ToList();
 		}
 

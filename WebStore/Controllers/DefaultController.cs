@@ -7,6 +7,7 @@ using WebStore.DAL.Context;
 using System.Data.Entity;
 using WebStore.Services.Services.Base;
 using WebStore.Services.Filters;
+using System.Text;
 
 namespace WebStore.Controllers
 {
@@ -50,9 +51,23 @@ namespace WebStore.Controllers
 			if ((int)TempData[ "Info" ] == 0) return PartialView( "Empty" );
 
 			var product = _productService.GetProducts().First(p=>p.Id == (int)TempData["Info"]);			
-			return PartialView( product );
+			return PartialView( "_ConditionerInfo", product );
+		}
+		[HttpGet]
+		public ActionResult Articles ()
+		{
+			return View();
+		}
+		[HttpGet]
+		public ActionResult Article (string ArticleName = "_mounting")
+		{			
+			return PartialView( ArticleName );
+		}
+		[HttpGet]
+		public ActionResult Questions()
+		{
+			return View();
 		}
 
-	
 	}
 }
