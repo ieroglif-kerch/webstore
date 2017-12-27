@@ -147,7 +147,14 @@
     <Content Include="Views\Shared\_consumption.cshtml" />
     <Content Include="Views\Shared\_cold.cshtml" />
     <Content Include="Views\Shared\_invertor.cshtml" />
-    <Content Include="Views\Default\Questions.cshtml" />
+    <Content Include="Views\Shared\_questions.cshtml" />
+    <Content Include="Views\Default\Menu.cshtml" />
+    <Content Include="Views\Shared\_guarantee.cshtml" />
+    <Content Include="Views\Shared\_services.cshtml" />
+    <Content Include="Views\Shared\_brands.cshtml" />
+    <Content Include="Views\Shared\_howToBuy.cshtml" />
+    <Content Include="Views\Shared\_contacts.cshtml" />
+    <Content Include="Views\Shared\_aboutUs.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -157,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\img\Brands\" />
     <Folder Include="Content\img\Conditioner\Conditioner\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Shared\Articles\" />

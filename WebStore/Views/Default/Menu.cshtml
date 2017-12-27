@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Menu";
+}
+
+<div class="container ">
+    <div class="list-group col-lg-4 col-md-4">
+        <div class="list-group-item ">
+
+            <a class="btn-link" href="@Url.Action( "Menu", "Default",  new {ArticleName = "_guarantee"})#nav-tabs">ГАРАНТИЯ</a>
+                       
+           
+        </div>
+        <div class="list-group-item">
+            <a class="btn-link" href="@Url.Action( "Menu", "Default",  new {ArticleName = "_services"})#nav-tabs">СЕРВИС</a>
+            
+           
+        </div>
+        <div class="list-group-item">
+            <a class="btn-link" href="@Url.Action( "Menu", "Default",  new {ArticleName = "_brands"})#nav-tabs">БРЕНДЫ</a>
+          
+        </div>
+        <div class="list-group-item">
+            <a class="btn-link" href="@Url.Action( "Menu", "Default",  new {ArticleName = "_questions"})#nav-tabs">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a>
+           
+        </div>
+        <div class="list-group-item">
+            <a class="btn-link" href="@Url.Action( "Articles", "Default",  new {ArticleName = "_mounting"})#nav-tabs">СТАТЬИ</a>
+           
+        </div>
+       
+        <div class="list-group-item">
+            <a class="btn-link" href="@Url.Action( "Menu", "Default",  new {ArticleName = "_howToBuy"})#nav-tabs">КАК КУПИТЬ?</a>
+
+        </div>
+        <div class="list-group-item">
+            <a class="btn-link" href="@Url.Action( "Menu", "Default",  new {ArticleName = "_contacts"})#nav-tabs">КОНТАКТЫ</a>
+
+        </div>
+        <div class="list-group-item">
+            <a class="btn-link" href="@Url.Action( "Menu", "Default",  new {ArticleName = "_aboutUs"})#nav-tabs">О НАС</a>
+
+        </div>
+    </div>
+    <div class="panel panel-default col-lg-8 col-md-8 ">
+        <div class="panel-body ">
+
+            @Html.Action( "MenuItem" )
+
+        </div>
+    </div>
+</div>
+

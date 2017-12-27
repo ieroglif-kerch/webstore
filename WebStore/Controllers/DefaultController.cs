@@ -63,11 +63,15 @@ namespace WebStore.Controllers
 		{			
 			return PartialView( ArticleName );
 		}
+		
 		[HttpGet]
-		public ActionResult Questions()
+		public ActionResult Menu()
 		{
 			return View();
 		}
-
+		public ActionResult MenuItem( string ArticleName = "_services" )
+		{
+			return PartialView( ArticleName );
+		}
 	}
 }
