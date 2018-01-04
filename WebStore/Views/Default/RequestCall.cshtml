@@ -1,0 +1,39 @@
+﻿@model WebStore.Services.DTO.EmailModel
+@{
+    ViewBag.Title = "RequestCall";
+}
+<div class="container panel panel-default">
+    <h2>ЗАКАЗАТЬ ЗВОНОК</h2>
+    <p>Напишите, что вас интересует и свой номер телефона. Мы свяжемся с вами.</p>
+
+    @using (Html.BeginForm( "RequestCall", "Default", FormMethod.Post, new { @class = "form-group panel-body" } ))
+    {
+    @Html.ValidationSummary()
+        <p>
+            <label>Тема. Например "покупка кондиционера", "заказать консультацию" и т.п.</label>
+            @Html.TextBoxFor( m => m.Subject, new { @class = "form-control", Value = ViewBag.Subject } )
+        </p>
+
+        <p>
+            <label>Ваше имя, как к Вам обращаться.</label>
+            @Html.TextBoxFor( m => m.CustomerName, new { @class = "form-control", } )
+        </p>
+        <p>
+            <label>Доп. иноформация</label>
+            @Html.TextAreaFor( m => m.Body, new { @class = "form-control" } )
+        </p>
+
+        <p>
+        <label>В какие часы Вам удобно разговаривать?</label>
+        </p>
+            <label>c</label>
+       
+        @Html.TextBoxFor( m => m.HrBegin, new { @class = "form-control" } )
+        <label>по</label>
+        @Html.TextBoxFor( m => m.HrEnd, new { @class = "form-control" } )
+       
+        <br />
+        <input type="submit" class="bnt btn-danger" value="Отправить" />
+       
+    }
+</div> 

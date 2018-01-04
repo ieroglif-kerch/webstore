@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Articles";
+}
+
+
+<div class="container   ">
+    <div class="list-group col-lg-4 col-md-4">
+        <div class="list-group-item ">
+         
+            <a class="btn-link" href="@Url.Action( "Articles", "Default",  new {ArticleName = "_mounting"})#nav-tabs">ЧТО НУЖНО ЗНАТЬ О МОНТАЖЕ КОНДИЦИОНЕРА</a>
+
+            <p>Кондиционер не является бытовой техникой, которую достаточно включить в розетку - и она уже работает. Самое главное здесь не само оборудование, а насколько оно профессионально смонтировано и насколько квалифицированным будет его гарантийное и сервисное обслуживание. </p>
+            <a  href="@Url.Action( "Articles", "Default",  new {ArticleName = "_mounting"})#nav-tabs" >подробнее...</a>
+        </div>
+        <div class="list-group-item">            
+            <a class="btn-link" href="@Url.Action( "Articles", "Default",  new {ArticleName = "_choosing"})#nav-tabs">КАК ВЫБРАТЬ КОНДИЦИОНЕР</a>
+                       
+           
+            <p>Для обеспечения нужного комфорта при выборе кондиционера необходимо обратить внимание на следующие параметры:</p>
+            <a href="@Url.Action( "Articles", "Default",  new {ArticleName = "_choosing"})#nav-tabs">подробнее...</a>
+        </div>
+        <div class="list-group-item">
+            <a class="btn-link" href="@Url.Action( "Articles", "Default",  new {ArticleName = "_efficiency"})#nav-tabs" >ЭНЕРГОЭФФЕКТИВНОСТЬ КОНДИЦИОЕНРА</a>
+            <p>С бесконечным ростом платы за электроэнергии стоит обратить внимание на энергоэффективность современной бытовой техники</p>
+            <a  href="@Url.Action( "Articles", "Default",  new {ArticleName = "_efficiency"})#nav-tabs">подробнее...</a>
+        </div>
+        <div class="list-group-item">
+            <a class="btn-link" href="@Url.Action( "Articles", "Default",  new {ArticleName = "_consumption"})#nav-tabs">"СКОЛЬКО ЭЛЕКТРОЭНЕРГИИ ПОТРЕБЛЯЕТ КОНДИЦИОНЕР"</a>
+            <p>Часто задаваемый вопрос. Кондиционер потребляет в несколько раз меньше, чем выдает!</p>
+            <a href="@Url.Action( "Articles", "Default",  new {ArticleName = "_consumption"})#nav-tabs">подробнее...</a>
+        </div>
+        <div class="list-group-item">
+            <a class="btn-link" href="@Url.Action( "Articles", "Default",  new {ArticleName = "_cold"})#nav-tabs">КОНДИЦИОНЕР И ПРОСТУДА</a>
+            <p>Многие считают, что главная причина - кондиционер. Давайте подробнее разберемся</p>
+            <a  href="@Url.Action( "Articles", "Default",  new {ArticleName = "_cold"})#nav-tabs">подробнее...</a>
+        </div>
+        <div class="list-group-item">
+            <a class="btn-link" href="@Url.Action( "Articles", "Default",  new {ArticleName = "_invertor"})#nav-tabs">КАКИМ КОНДИЦИОНЕРАМ ЛУЧШЕ ОБОГРЕВАТЬСЯ, ИЛИ КОРОКО ОБ ИНВЕРТОРАХ</a>
+            <p>Настолько ли инверторы хороши, как о них пишут? Кто согреет лучше в периоды межсизонья и знойных зим?</p>
+            <a href="@Url.Action( "Articles", "Default",  new {ArticleName = "_invertor"})#nav-tabs">подробнее...</a>
+        </div>
+    </div>
+    <div class="panel panel-default col-lg-8 col-md-8 ">
+        <div class="panel-body ">
+            
+                @Html.Action( "Article" );
+          
+        </div>
+    </div>
+</div>

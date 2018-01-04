@@ -45,3 +45,9 @@ D:\Coding\MyShop\WebStore\WebStore\bin\WebStore.Domain.dll
 D:\Coding\MyShop\WebStore\WebStore\bin\WebStore.Domain.pdb
 D:\Coding\MyShop\WebStore\WebStore\bin\LinqKit.dll
 D:\Coding\MyShop\WebStore\WebStore\bin\LinqKit.xml
+D:\Coding\MyShop\WebStore\WebStore\bin\ActionMailer.Net.dll
+D:\Coding\MyShop\WebStore\WebStore\bin\ActionMailer.Net.Mvc.dll
+D:\Coding\MyShop\WebStore\WebStore\bin\ActionMailer.Net.pdb
+D:\Coding\MyShop\WebStore\WebStore\bin\ActionMailer.Net.xml
+D:\Coding\MyShop\WebStore\WebStore\bin\ActionMailer.Net.Mvc.pdb
+D:\Coding\MyShop\WebStore\WebStore\bin\ActionMailer.Net.Mvc.xml

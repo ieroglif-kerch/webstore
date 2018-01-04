@@ -86,7 +86,7 @@
                     <ul class="list-unstyled h5 ">
                         <li><a href="@Url.Action( "Menu", "Default",  new {ArticleName = "_contacts"})#nav-tabs">Контакты</a></li>
                         <li><a class="btn-link" href="@Url.Action( "Menu", "Default",  new {ArticleName = "_howToBuy"})#nav-tabs">Как купить?</a></li>
-                        <li><a href="#">Заказать звонок</a></li>
+                        <li>@Html.ActionLink("Заказать звонок", "RequestCall", "Default")</li>
                     </ul>
                 </div>
          
