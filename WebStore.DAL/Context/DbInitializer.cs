@@ -16,6 +16,9 @@ namespace WebStore.DAL.Context
 		{
 			base.Seed( context );
 
+			//TypeOfConditionerId  1- split system
+			//OperationModeId	   1 - cold/heat
+
 			context.Brand.AddRange( new List<Brand>
 						{
 						new Brand { Name = "Akvilon" },
@@ -185,6 +188,27 @@ namespace WebStore.DAL.Context
 							CompressorId        = (int)Ids.Inverter.No,
 							TermalCapabilityId  = (int)Ids.BTU.BTU12,
 							MakerRef            = "http://www.kentatsu-aircon.ru/nastennye-split-sistemy-kentatsu-ksgm-hfa.shtml",
+
+							},
+				new Product {
+							BrandId             = (int)Ids.Brand.Kentatsu,
+							Model               = "KSGH26HZAN1",
+							Series              = "KSGH_HZA TITAN",
+							NoiseMin            = 32,
+							ConsumPowerCold     = 820,
+							ConsumPowerHeat     = 810,
+							ProducePowerCold    = 2640,
+							ProducePowerHeat    = 2930,
+							WindFlowMax         = 500,
+							OutUnitSize         = "700x535x235",
+							InUnitSize          = "795x270x165",
+							Price               = 20000,
+							TypeOfConditionerId = 1,
+							OperationModeId     = 1,
+							ServiceAreaId       = (int)Ids.Area.m25,
+							CompressorId        = (int)Ids.Inverter.Yes,
+							TermalCapabilityId  = (int)Ids.BTU.BTU9,
+							MakerRef            = "http://www.kentatsu-aircon.ru/nastennaya-split-sistema-kentatsu-ksgh-hza-titan.shtml",
 
 							},
 			#endregion

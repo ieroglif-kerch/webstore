@@ -43,7 +43,7 @@ namespace WebStore.Domain.Entities
 
 		[ForeignKey( "TypeOfConditioner" )]
 		public int						TypeOfConditionerId { get; set; }
-		public virtual TypeOfConditioner TypeOfConditioner  { get; set; }
+		public virtual TypeOfConditioner TypeOfConditioner  { get; set; } 
 
 		[ForeignKey( "Compressor" )]
 		public int						 CompressorId		{ get; set; }

@@ -1,4 +1,4 @@
-﻿@model WebStore.Services.DTO.EmailModel
+﻿@model  WebStore.Services.DTO.EmailModel
 @{
     ViewBag.Title = "RequestCall";
 }
@@ -6,17 +6,17 @@
     <h2>ЗАКАЗАТЬ ЗВОНОК</h2>
     <p>Напишите, что вас интересует и свой номер телефона. Мы свяжемся с вами.</p>
 
-    @using (Html.BeginForm( "RequestCall", "Default", FormMethod.Post, new { @class = "form-group panel-body" } ))
+    @using (Html.BeginForm( "RequestCall", "Default", FormMethod.Post, new { @class = "form-group panel-body  " } ))
     {
     @Html.ValidationSummary()
         <p>
             <label>Тема. Например "покупка кондиционера", "заказать консультацию" и т.п.</label>
-            @Html.TextBoxFor( m => m.Subject, new { @class = "form-control", Value = ViewBag.Subject } )
+            @Html.TextBoxFor( m => m.Subject, new { @class = "form-control input-lg ", Value = ViewBag.Subject } )
         </p>
 
         <p>
             <label>Ваше имя, как к Вам обращаться.</label>
-            @Html.TextBoxFor( m => m.CustomerName, new { @class = "form-control", } )
+            @Html.TextBoxFor( m => m.CustomerName, new { @class = "form-control input-lg", } )
         </p>
         <p>
             <label>Доп. иноформация</label>
@@ -28,12 +28,12 @@
         </p>
             <label>c</label>
        
-        @Html.TextBoxFor( m => m.HrBegin, new { @class = "form-control" } )
+        @Html.TextBoxFor( m => m.HrFrom, new { @class = "form-control" } )
         <label>по</label>
-        @Html.TextBoxFor( m => m.HrEnd, new { @class = "form-control" } )
+        @Html.TextBoxFor( m => m.HrTill, new { @class = "form-control" } )
        
         <br />
-        <input type="submit" class="bnt btn-danger" value="Отправить" />
+        <input type="submit" class="bnt btn-danger btn-lg" value="Отправить" />
        
     }
 </div> 
